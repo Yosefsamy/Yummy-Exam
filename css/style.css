@@ -21,7 +21,7 @@ body{
 
 #sidebar{
     background-color: #0D0D0D;
-    z-index: 999;
+    z-index: 998;
     top: 0;
     bottom: 0;
 }
