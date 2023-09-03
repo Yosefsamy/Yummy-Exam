@@ -6,9 +6,8 @@
 //~ Document Is Ready ~//
 $(function(){
     $('.loading-screen i').fadeOut(500,function(){
-        $('.loading-screen i').fadeOut(500);
+        $('.loading-screen').fadeOut(500);
     });
-    $('.loading-screen').fadeOut(500);
     $("body").css("overflow", "visible");
 })
                         // & === Loading Screen === & //
