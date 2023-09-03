@@ -1,0 +1,104 @@
+
+body{
+    background-color: #0D0D0D;
+}
+
+.loading-screen{
+    z-index: 999;
+    display: flex;
+}
+
+.inner-loading-screen{
+    position: absolute;
+    z-index: 9;
+    background-color: #0D0D0D;
+    display: none;
+}
+
+.sidebarMenu img{
+    width: 50px;
+}
+
+#sidebar{
+    background-color: #0D0D0D;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+}
+
+#sidebar li,
+#sidebar i{
+    cursor: pointer;
+}
+
+#sidebar li{
+    position: relative;
+    padding-block: 8px;
+}
+
+
+
+.main .layer{
+    background-color: #f9f6f6ca;
+    inset: 0;
+    transform:translateY(300px);
+    opacity: 0;
+    transition: 0.5s all;
+}
+
+.main .inner-col:hover .layer{
+    transform:translateY(0);
+    opacity: 1;
+}
+
+.col-md-3{
+    cursor: pointer;
+}
+
+ul .alert{
+    width: fit-content;
+}
+
+.source-meal:focus{
+    border: 4px solid #24533d;
+    border-radius: 7.5px;
+    outline: 0;
+}
+
+.youtube-meal:focus,
+#submitBtn:focus{
+    border: 4px solid #773037;
+    border-radius: 7.5px;
+    outline: 0;
+}
+
+#searchSection{
+    display: none;
+}
+
+#searchSection input::placeholder{
+    color: #6C757D;
+}
+
+
+
+#showContact{
+    display: none;
+}
+
+#wrongName,
+#wrongEmail,
+#wrongPhone,
+#wrongAge,
+#wrongPassword,
+#wrongRePassword{
+    display: none;
+}
+
+@media screen and (min-width:992px) {
+    #showContact .container{
+        padding-inline: 5.625rem;
+    }
+
+
+}

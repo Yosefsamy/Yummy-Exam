@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yummy</title>
+        <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+
+        <!-- L O A D I N G  S C R E E N -->
+            <div class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 text-white bg-black justify-content-center align-items-center">
+                <i class="fa fa-spinner fa-spin fa-5x"></i>
+            </div>
+
+        <!-- L O A D I N G  S C R E E N -->
+
+        <!-- S I D E B A R  -->
+
+        <div id="sidebar" class="position-fixed min-vh-100 d-flex">
+            <div
+                class="sidebarInner text-white d-flex flex-column justify-content-between p-4">
+                <div class="links overflow-hidden">
+                    <ul class="list-unstyled">
+                        <li id="search">Search</li>
+                        <li id="Categories">Categories</li>
+                        <li id="Area">Area</li>
+                        <li id="Ingredients">Ingredients</li>
+                        <li id="contactUs">Contact Us</li>
+                    </ul>
+                </div>
+
+                <div class="sidebarFooter">
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <p>Copyright Â© 2019 All Rights <br> Reserved.</p>
+                </div>
+
+            </div>
+
+            <div
+                class="sidebarMenu d-flex flex-column justify-content-between py-4 px-2 bg-white text-black text-center">
+                <img src="./imgs/logo.png" alt="sidebar-logo">
+                <i class="fa-solid fa-xmark fa-3x" id="iconClicked"></i>
+                <div>
+                    <i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- S I D E B A R  -->
+
+                <!-- S E A R C H S E C T I O N -->
+
+                <div id="searchSection" class="container w-75">
+                    <div class="row py-4">
+
+                        <div class="col-md-6">
+                            <input id="searchByName" type="text" placeholder="Search By Name" class="form-control text-white bg-transparent">
+                        </div>
+
+                        <div class="col-md-6">
+                            <input id="searchByFirstLetter" type="text" placeholder="Search By First Letter" maxlength="1" class="form-control text-white bg-transparent">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- S E A R C H S E C T I O N -->
+
+
+                        <!-- C O N T A C T  U S  -->
+
+        <div id="showContact" class="forms justify-content-center align-items-center min-vh-100">
+            <div class="container w-75 text-center">
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+                        <input id="name" class="form-control" type="text" placeholder="Enter Your Name">
+                        <div id="wrongName" class="alert alert-danger mt-2">
+                            Special characters and numbers not allowed
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input id="email" class="form-control" type="email" placeholder="Enter Your Email">
+                        <div id="wrongEmail" class="alert alert-danger mt-2">
+                            Email not valid *exemple@yyy.zzz
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input id="phone" class="form-control" type="text" placeholder="Enter Your Phone">
+                        <div id="wrongPhone" class="alert alert-danger mt-2">
+                            Enter valid Phone Number *example <small> +##</small> 01287773399 <br> <b>Country code is optional</b>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input id="age" class="form-control" type="number" placeholder="Enter Your Age">
+                        <div id="wrongAge" class="alert alert-danger mt-2">
+                            Enter valid age
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input id="password" class="form-control" type="password" placeholder="Enter Your Password">
+                        <div id="wrongPassword" class="alert alert-danger mt-2">
+                            Enter valid password *Minimum eight characters, at least one letter and one number:*
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input id="rePassword" class="form-control" type="password" placeholder="Repassword">
+                        <div id="wrongRePassword" class="alert alert-danger mt-2">
+                            Enter valid repassword
+                        </div>
+                    </div>
+
+                </div>
+
+                <button id="submitBtn" type="submit" class="btn btn-outline-danger px-2 mt-3" disabled>Submit</button>
+
+            </div>
+        </div>
+
+        <!-- C O N T A C T  U S  -->
+
+        <!-- B O D Y  -->
+
+        <div class="main min-vh-100">
+            <div class="inner-loading-screen top-0 start-0 end-0 bottom-0 bg-black text-white justify-content-center align-items-center ">
+                <i class="fa fa-spinner fa-spin fa-5x"></i>
+            </div>
+            <div class="container">
+                <div id="demo" class="row g-4 py-5"></div>
+            </div>
+        </div>
+
+        <!-- B O D Y  -->
+
+
+
+
+
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+        <script src="./js/main.js"></script>
+
+    </body>
+</html>
